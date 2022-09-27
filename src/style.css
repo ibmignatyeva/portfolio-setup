@@ -1,5 +1,5 @@
 :root {
-  --background: linear-gradient(
+  --gradient-color: linear-gradient(
     to left bottom,
     #3333ff,
     #442cf5,
@@ -14,13 +14,15 @@
     #f07bc6,
     #ff99cc
   );
+
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
   --default-font-color: #f0dfdf;
 }
 
-body {
+html {
   display: block;
+  text-align:center;
 }
 
 h1,
@@ -43,7 +45,7 @@ p {
 }
 
 .developer {
-  background: var(--background);
+  background: var(--gradient-color);
   text-align: center;
   padding: 160px 20px;
 }
