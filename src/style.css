@@ -28,6 +28,7 @@
 html {
   display: block;
   text-align: center;
+  padding:15px 15px;
 }
 
 h1,
@@ -174,28 +175,37 @@ p {
 
 footer {
   background: var(--gradient-color);
-  font-size: 15px;
-  margin: 0 auto;
-  padding: 30px 30px;
+  font-size: 16px;
+ padding:30px 30px; 
   text-align: center;
-  margin-top: 50px;
   display: block;
+  margin-top:60px;
 }
+
 
 .footer-home,
 .footer-contact,
 .footer-about {
+  
   text-decoration: none;
   color: var(--default-font-color);
   font-size: bold;
   font-family: var(--default-font-family);
+
 }
 
 .fa-linkedin,
 .fa-square-github {
   font-size: 50px;
   margin: 25px;
+  margin-bottom:100px;
   color: var(--primary-color);
+}
+
+.fa-linkedin:hover,
+.fa-square-github:hover{
+  color:var(--secondary-color);
+  transition:all 200ms ease-in-out;
 }
 
 
