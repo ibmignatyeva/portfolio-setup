@@ -197,3 +197,36 @@ footer {
   margin: 25px;
   color: var(--primary-color);
 }
+
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 35px;
+    line-height: 2;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .developer {
+    padding: 80px 20px;
+  }
+
+  .main-content {
+    padding: 0;
+    text-align: center;
+  }
+    .about-text img,
+    .main-text img{
+    display:none;
+
+}
+
+.contact-link,
+.about-link{
+  margin:8px 8px;
+  padding:10px 10px;
+}
+
+}
