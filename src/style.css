@@ -181,6 +181,10 @@ footer {
   display: block;
   margin-top:60px;
 }
+footer p{
+  color:var(--default-font-color);
+  font-size:15px;
+}
 
 
 .footer-home,
