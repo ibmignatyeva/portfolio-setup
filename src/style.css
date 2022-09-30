@@ -18,8 +18,11 @@
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
   --default-font-color: #f0dfdf;
-  --secondary-color:#5f13d8;
-  
+  --primary-color: #741a9e;
+  --secondary-color: #5f13d8;
+  --tertiary-color: #e285e2;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --background-color: #442cf5;
 }
 
 html {
@@ -29,19 +32,17 @@ html {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   color: var(--default-font-color);
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
-h1 {
-  font-size: 75px;
-}
 p {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
   font-family: var(--default-font-family);
   font-weight: normal;
 }
@@ -51,41 +52,103 @@ p {
   text-align: center;
   padding: 160px 20px;
 }
-.developer p {
-  font-size: 30px;
+.developer h1 {
+  font-size: 75px;
   font-weight: bold;
-  color: var(--default-font-color);
   margin: 0;
 }
 
-
 .developer h2 {
-  font-family: var(--default-font-family);
   font-weight: normal;
-  font-size: 24px;
   line-height: 2;
+  font-size: 48px;
+  margin-top: 20px;
 }
-.developer-btn {
-  margin-top: 30px;
-  border-radius: 6px;
-  font-size: 18px;
-  padding: 18px 30px;
-  line-height: 27px;
+.developer h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+.about-text {
+  margin: 30px 0;
+  font-family: var(--heading-font-family);
+  display: block;
+  line-height: 1.5;
+}
+
+.about-text h1 {
+  font-size: 65px;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+.about-text h3 {
+  color: #000;
+}
+
+.contact-link,
+.about-link {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--background-color);
   color: var(--default-font-color);
+}
+.navigation-links {
+  display: block;
+  margin-top: 100px;
+}
+.contact-link:hover,
+.about-link:hover {
+  background-color: var(--default-font-color);
+  transition: all 200ms ease-in-out;
+  color: var(--primary-color);
+}
+
+.email-image {
+  width: 50px;
+}
+.contact-me,
+.email {
+  font-size: 30px;
+  display: block;
+}
+#contact-me {
+  color: var(--primary-color);
+  font-size: 45px;
+  padding: 60px 60px;
+}
+.email {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.email:hover {
+  text-decoration: underline;
+  color: var(--tertiary-color);
+}
+
+.main-content p {
+  font-size: 25px;
+}
+
+.container p {
+  line-height: 1.5;
+  font-size: 15px;
   font-family: var(--default-font-family);
 }
 
-.container p{
-  line-height:1.5;
-  font-size:15px;
-  font-family: var(--default-font-family);
+.container h2 {
+  font-size: 40px;
+  color: var(--secondary-color);
 }
 
-.container h2{
-  font-size:40px;
-  color:var(--secondary-color);
-
-}
 .row img {
   margin-top: 50px;
   display: block;
@@ -99,7 +162,38 @@ p {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
   font-size: 15px;
   font-weight: bold;
+}
+
+.primary-link:hover {
+  transition: all 200ms ease-in-out;
+  color: var(--primary-color);
+  background-color: var(--default-font-color);
+}
+
+footer {
+  background: var(--gradient-color);
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 30px 30px;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+.footer-home,
+.footer-contact,
+.footer-about {
+  text-decoration: none;
+  color: var(--default-font-color);
+  font-size: bold;
+  font-family: var(--default-font-family);
+}
+
+.fa-linkedin,
+.fa-square-github {
+  font-size: 50px;
+  margin: 25px;
+  color: var(--primary-color);
 }
