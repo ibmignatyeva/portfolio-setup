@@ -181,9 +181,11 @@ footer {
   display: block;
   margin-top:60px;
 }
-footer p{
+footer p,
+footer a{
   color:var(--default-font-color);
   font-size:15px;
+ 
 }
 
 
