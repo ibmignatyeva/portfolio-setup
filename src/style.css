@@ -28,7 +28,7 @@
 html {
   display: block;
   text-align: center;
-  padding:15px 15px;
+  padding:0;
 }
 
 h1,
@@ -217,12 +217,12 @@ footer a{
 
 @media (max-width: 650px) {
   h1 {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 2;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .developer {
